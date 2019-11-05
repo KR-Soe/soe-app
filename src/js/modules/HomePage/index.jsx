@@ -1,12 +1,13 @@
 import React from 'react';
-import './App.css';
-import logo from './images/logo.jpg';
+import '../../../css/App.css';
+import logo from '../../../images/logo.jpg';
 
 function App() {
   return (
     <div className="root">
       <div className="App">
         <header className="App-header">
+          
           <img className="App-logo" src={logo} alt="logo"/>
           <p>
             Edit <code>src/App.js</code> and save to reload.
