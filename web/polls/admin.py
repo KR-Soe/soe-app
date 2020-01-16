@@ -10,17 +10,18 @@ class AdminPlayer(admin.ModelAdmin):
     'password',
     'email'
   )
-  
+  list_editable = ('user','summoner_name', 'password', 'email')
+
 @admin.register(Champ)
 class AdminChamp(admin.ModelAdmin):
   list_display = (
     'name',
     'lore'
   )
-  
+
 @admin.register(Skin)
 class AdminSkin(admin.ModelAdmin):
   list_display = (
     'name',
-    'champ_id'
+    'champ'
   )
